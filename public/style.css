@@ -1,0 +1,161 @@
+/* Reset and base setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #fff3e0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #263238;
+  overflow-x: hidden;
+  padding-bottom: 60px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 40px 24px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #5d1049;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px #fce4ec;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #00695c;
+}
+
+/* Form styling */
+form {
+  background: linear-gradient(to right, #fce4ec, #e1f5fe);
+  padding: 30px;
+  border-radius: 16px;
+  border-left: 6px solid #ab47bc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #4e342e;
+}
+
+.form-control,
+.form-select,
+textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border: 2px solid #c5cae9;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+  border-color: #7e57c2;
+  box-shadow: 0 0 0 4px rgba(126, 87, 194, 0.2);
+  outline: none;
+}
+
+/* Button */
+.btn-primary {
+  background: linear-gradient(to right, #42a5f5, #ab47bc);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #5c6bc0, #ec407a);
+}
+
+/* Friend List */
+#friend-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.friend-card {
+  background: linear-gradient(to right, #fff3e0, #e1bee7);
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-left: 6px solid #ff7043;
+}
+
+.friend-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Chart area */
+#worldChart {
+  max-width: 600px;
+  margin: 30px auto;
+  display: block;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Spark Section */
+#friend1,
+#friend2 {
+  padding: 10px;
+  border: 2px solid #f06292;
+  border-radius: 10px;
+  background-color: #fff0f5;
+  font-size: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+#spark-result {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #6a1b9a;
+  background: #ede7f6;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 16px;
+  }
+
+  .friend-card {
+    width: 100%;
+  }
+}
