@@ -1,3 +1,6 @@
+Live Demo: `https://imaginary-friend-b04d3.web.app/`
+  
+  
   **Imaginary Friend Creator**
 
 Welcome to the Imaginary Friend Creator, a whimsical web app inspired by the magical worlds of Studio Ghibli! Create, edit, delete, and explore imaginary friends from fantastical realms, visualize their world distribution with a polar area chart, and generate fun interactions between them. This app is built with HTML, CSS, and JavaScript, using Firebase for data storage and Chart.js for visualizations.
